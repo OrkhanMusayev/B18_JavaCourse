@@ -1,0 +1,289 @@
+ /*
+    1 "cybertek@yahoo.com", "cybertek@gmail.com", "cybertek@hotmail.com",
+     "cybertek@outlook.com"  By using Array declare witch one has @gmail.com
+
+     2 Store values at Array variable after declare array
+     example: you have 3 array but you will give values later and  Get Arrays length
+
+3 Create an array that holds 12 months namesUser should be able to enter
+month index and output should be:“The month name is <MonthName>”
+As long as user  addes invalid number print "re enter"
+After 3 attempe declaer "you tried 3 times sorry sytem locked" ans exit program
+
+4 Write a program that asks how many student user wants  and ask name
+       and store each of the names in the array students
+
+5 Second Way ---  Write a program that asks "enter a name" 10 times,
+       and store each of the names in the array students
+
+6  Second Way ---  Write a program that asks "enter a name" 10 times,
+       and store each of the names in the array students
+
+7  write a program that can find the maximum number from any given int array
+
+8   write a program that can find the minimum number from any given int array
+
+9   write a program by using while that can find the maximum number from any given
+ int array which declared IN ADVANCE.
+
+10  Create an array that holds 12 months namesUser should be able to enter
+month index and output should be:“The month name is <MonthName>”.
+USE "while" loop and ask user to" re enter" if user addes wrong month number
+and after 3 attempts print " you tried 3 times" and exit system
+
+11 Create int Array or String  and ask user  to STORE Array
+ and declare them by calling Array from import java
+
+12 Combine arrays  int arr1[]={1,2,3};  int arr2[]={4,5,6,7}; int arr3[]=
+
+13 int[] arr5 = {3, 2, 1};  int[] arr6 = {2, 1, 3};  sort and check equals Arrays
+
+14 sort char -{'Z', 'D', 'W', 'Y', 'A', 'B', 'E' , 'D' };
+
+15 "Cybertek School";  "School Cybertek"; convert String to char array then
+sort them and then check eguality
+
+16 {"Deniz", "Osman", "Rustem",  "Anna", "Ali", "Adil"};  sort this String array
+
+17 int[] arr11 = {3,1,4,-1,100, -100, 200, 155};
+ [-100, -1, 1, 3, 4, 100, 155, 200]
+[200, 155, 100, 4, 3, 1, -1, -100]
+Declare ascending array then convert it descending array and print like this
+
+18 Given a String array words, iterate through each word and print first and last letter of each element in separate lines.
+Example:
+words → ["hello", "why", "by", "apple" , "note"]
+print:
+       ho
+       wy
+       by
+       ae
+       ne
+
+19 The code provided in your main method will take in five Strings and
+ save them into an array called arr.  Print out the first three letter of
+  each element of arr, one per line.  You can assume that every element of
+  arr is at least 3 letters long.
+Example:
+arr -> ["apple", "banana"]
+ prints: app
+         ban
+
+  20  Given an array of ints, print true if the array contains a 5 next
+   to a 5 anywhere in the array. If no consecutive 5s or no 5s are
+   detected in your code then print false.
+nums → [1, 5, 5, 1, 1] → true
+nums → [1, 8, 5, 5, 0] → true
+nums → [1, 5, 4, 1, 5] → false
+nums → [1, 4, 4, 1, 99] → false
+
+21 Given a String array words, iterate through each word and print first
+ and last letter of each element in the format below.
+Example:
+words → ["hello", "why", "by", "apple" , "note"]
+print → [ho, wy, by, ae, ne]
+
+22  Given an array nums, calculate count of even numbers in nums and
+print out to console.
+nums → [2, 1, 2, 3, 4]) → 3
+nums → [2, 2, 0, 3, 5]) → 3
+nums → [1, 3, 5, 7, 9]) → 0
+
+23  Given an array nums with 7 integers every element is repeated twice
+ - except one. Find that element and print it to console.
+Example:
+nums -> [1, 1, 2, 3, 4, 3, 4]
+         2
+
+24  Given the array words, it will print the word with the largest length.
+
+25  1. write a program that can return the longest string of text from an array
+    2. write a program that can return the shortest string of text from an array
+
+26    Write a program that can return the average number from an array of
+ integers
+  ex:
+  [1,2,3]
+   average:
+      [10, 15, 5, 6]
+ average: 9
+  [4, 5, 6, 7, 8, 10, 20, 30, 0]
+ average: 10
+
+ 27  DecimalFormat ,  rounding the decimals
+
+ 28 By using char array and for loop  declare this {'d','c','a','b'};
+ like abcd
+
+ 29  String str ="Today is great day" ;declare as Array [Today, is, great, day]
+then reverse Array[Today, is, great, day] to >  day great is Today
+
+30  String str2 = "ABCD";  get String    //["A", "B", "C", "D"]
+and char //['A', 'B', 'C', 'D']
+
+31  int[] nums  = {1, 2, 3, 4}; use for eeach loop to get 1 2 3 4
+
+32   String[] students = {"Muhtar", "Asiya", "Murodil"}; use for each
+to get Muhtar Asiya Murodil
+
+33    int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; use each for loop
+to get 5,6,7,8,9,10
+
+34     String sentnce = "I like Java";  split thema nd use for each to get
+I
+lIKE
+Java
+THEN REVERSE THEM
+Java
+like
+I
+
+35  given an array:
+    String[] emails = {"cybertek@gmail.com", "cybertek@yahoo.com",
+     "cybertek@hotmail.com", "cybertek@outlook.com"}
+elemnts could be more in the array
+ prin all the email addresses excluding the gmail addresses
+  NOTE: MUST USE FOR EACH LOOP
+
+ 36   //                      0        1         2         3
+        String[] DevTeam = {"Zeynep", "Haider", "Jovid", "Muhtar"};
+        String[] TestersTeam = {"Rahman", "Aishan", "Osman", "Ali"};
+        String[] PO = {"Barzy", "Donald"};
+        String[] TestersTeam2  ={"Ilham", "Zarina", "Aizhan", "Asiman"} ;
+Creat SCRUM TEam ARRAY AND ADD Devteam,Testersteam,Po into scrum team then
+change  "Muhtar" to "Jean" in devtean, and then change Testerteam with
+ Testerteam 2 in Scrum Team Array then declear "Jean" from devteam ,Aizhan from
+ Testerteam2 and then declear whole Testerteam2 and then declaer "Donald"
+ from Po team
+
+ 37 {  { 1, 2, 3} ,  { 4, 5, 6, 7}   };
+ Creat 2 singel  Array then create multi dimensional Array and
+ put 2 singel array into multi dimensional array then declear multi dimensional
+ Aray's length then creat new array and assign second single array
+ from multi demensional to new array and declaer new array and then declear 7
+
+ 38  {  {'A', 'B' } ,  {'D', 'E', 'F'} ,  {'G', 'H', 'I'} };
+  Creat  char multi demensional Array and then put three single dimencional
+ array and put 3 values into  each single dimencional array  and then
+ assign 'D' to char variable and {'G', 'H', 'I'} to another char variable and print them
+
+ 39 {  {"A", "B", "C"},   {"D", "E", "F"},  {"J", "H", "I"}
+ Creat String multi dimencional Array and then declear "H"
+
+40  {1,2,3};  creat single dimensional array and print it like this [1, 2, 3]
+Create multi dimensional array   {{1,2,3},{4,5,6}}; and declare like this
+[[1, 2, 3], [4, 5, 6]]
+
+41 {{1,2,3},{4,5,6}} ,     {{7,8,9},{10,11,12}
+create multi demencional array and declare this [1, 2, 3], [4, 5, 6] then
+[4, 5, 6]  then  12
+
+42   {"Tiger", "Lion", "Monkey", "Turtle", "Corcodile"};
+ {"Eagle", "Ducks", "Peacock","Chicken"};
+These are single dimencional Arrays. Create multi dimencional Array name is
+zoo and put these into zoo then create String and assign  "Chicken from zoo to new String and print
+"Chiken" then declear all animals excluding "Chiken" from zoo,then declear all animlas excluding
+"Turtle"  from zoo
+
+43  1. create an int array called numbers that has length of 100
+        2. assign 1~100 to the array' each indexes
+        3. use for each loop to rpint out all the even numbers.
+                MUst use continue statement
+
+44 Ask user "how many number he wants to add?"then fill out this int array {};
+and then REVERSE and  print this 5 4 3 2 1 and the array   [5, 4, 3, 2, 1]
+
+45    3. write a program that can return the number of appearances of
+"java" and "python" anywhere in the sentence---"I Like java and javascript";
+
+46  {1,2,3,4,5,6,7,8,9,10};
+ write a program that can count the even and odd number from an array of integers
+and print out odd and even numbers ether
+                        MUST use for each loop
+
+  47 {{1,2,3},{4,5,6}};  print this multi dimensional array like this.
+[1, 2, 3]
+[1, 2, 3]
+3
+[[1, 2, 3], [4, 5, 6]]
+[4, 5, 6]
+1
+2
+3
+4
+5
+6
+
+48  {  {'A','B' } , {'C', 'D', 'E' } , {'F', 'J', 'H', 'I' }  };      print like this
+A
+B
+C
+D
+E
+F
+J
+H
+I
+
+49       {  {9, 8, 7}, {6},  {5,4,3,2,1,0}   }; print like this
+9 8 7
+6
+5 4 3 2 1 0
+
+50   int[][] numbers11= {  {9, 8, 7}, {6},  {5,4,3,2,1,0}   };  output should be this
+7 8 9 6 0 1 2 3 4 5
+
+51   {  {9, 8, 7}, {6},  {5,4,3,2,1,0}   };    output should be
+5 4 3 2 1 0 6 9 8 7
+
+52   {  {9, 8, 7}, {6},  {5,4,3,2,1,0}   };  output should be
+0 1 2 3 4 5 6 7 8 9
+
+53   {
+                {1,2,3},
+                {4,5,6,7,8,9},
+                {10,11,12,13,14},
+                {15,16,17,18,19,20,21}
+        };
+        Output should be all even numbers and count of odd numbers
+2 4 6 8 10 12 14 16 18 20
+11
+
+54    {1,2,3,4,5};  output  use for each
+1
+2
+3
+4
+5
+
+55  { {1,2,3}, {4,5,6}  };  output  use for each
+1
+2
+3
+4
+5
+6
+
+56  {  {'A', 'B'} , {'C', 'D', 'E'} , {'F', 'J', 'H'}  };   output  use For Each
+A
+B
+C
+D
+E
+F
+J
+H
+
+57   {
+                {1,2,3},
+                {4,5,6,7,8,9},
+                {10,11,12,13,14},
+                {15,16,17,18,19,20,21}
+        };
+        Output should be
+2 4 6 8 10 12 14 16 18 20
+11 > count of odd numbers
+sum of odd: 121
+sum of even: 110
+
+     */

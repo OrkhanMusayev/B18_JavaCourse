@@ -1,0 +1,12 @@
+warmup task:
+    1. write a method that can return the maximum number from an int array
+    2. write a method that can return the maximum number from a double array
+            NOTE: MUST apply method overloading
+    3. write a method that can return the minimum number from an int array
+    4. write a method that can return the minimum number from a double array
+            NOTE: MUST apply method overloading
+
+    5. write an int[] return method that can sort an int array in descending order
+    6. write a double[] return method that can sort a double array in descending order
+    7. write a char[] return method that can sort a char array in descending order
+            NOTE: MUST apply method overloading

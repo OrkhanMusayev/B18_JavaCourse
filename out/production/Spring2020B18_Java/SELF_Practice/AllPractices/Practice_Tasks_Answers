@@ -1,0 +1,728 @@
+
+
+     */
+
+
+        public static void main(String[] args) {
+            Scanner scan=new Scanner(System.in);
+
+            //1
+            String[] emails = {"cybertek@yahoo.com", "cybertek@gmail.com", "cybertek@hotmail.com", "cybertek@outlook.com"};
+            // print out all the users who regsitered with thier gmail
+            //  max:  4
+            for (int i = 0; i <= 3; i++) {
+                String email = emails[i];
+                if (email.endsWith("@gmail.com")) {
+                    System.out.println(email);
+                }
+            }
+//========================================================================================//
+//2
+            String[] Testers = new String[3];  // {"Reem", "Madina", "Osman"};
+            // index: 0, 1, 2
+            Testers[0] = "Reem";
+            Testers[2] = "Osman";
+            Testers[1] = "Madina";
+            for(int i=0;i<Testers.length-1;i++){
+                String ss=Testers[i];
+                System.out.println(ss);
+            }
+            //  System.out.println(Testers[0]);  // Reem
+            //  System.out.println(Testers[1]); // null
+            //System.out.println(Testers[2]); // "Osman
+            System.out.println(Testers.length);  // 3
+
+//===========================================================================//
+//3
+            String month[] = {"January", "February", "March", "April", "May", "June", "July",
+                    "August", "September", "October", "November", "December",};
+
+            System.out.println("Enter a number");
+            int    num = scan.nextInt();
+            for (int i = 1; i <= 12; i++) {
+                int count=1;
+                while (num <= 0 || num > 12){// repeats the input number when invalid
+                    System.out.println("Invalid month number: Try again");
+                    num=scan.nextInt();
+                    count++;
+                    if(count==3&&(num <= 0 || num > 12)){
+                        System.out.println("you tried 3 times sorry system locked");
+                        System.exit(0);
+                    }
+                }
+                if (num == i) {
+                    System.out.println(month[i-1]);
+                }
+            }
+
+//============================================================================//
+            //4
+            System.out.println("Hw many student do you want?");
+            int i5=scan.nextInt();
+            String[] student=new String[i5];
+            for (int i22=0;i22<=student.length-1;i22++){
+                System.out.println("Enter name");
+                student[i22]=scan.next();
+            }
+            System.out.println("List of students:");
+            for(int i33=0;i33<=student.length-1;i33++) {
+                System.out.println((i33 + 1) + ")" + student[i33]);
+
+            }
+//=============================================================================//
+            //5
+            String name=" ";
+            String students[]=new String[10];
+            for(int i55=0;i55<10;i55++){
+                System.out.println("enter name");
+                students[i55]=scan.next();
+                name+=i55+1+":"+students[i55]+" ";
+            }
+            System.out.print(name);
+//================================================================================//
+            //6
+            String[] students11 = new String[10];
+            for(int i = 0; i < 10 ; i++){
+                System.out.println("Enter name");
+                students11[i]=scan.nextLine();
+
+            }
+            System.out.println("Print names: ");
+            int count=0;
+            for (String r: students11){
+                count++;
+                System.out.println(count+") "+ r.substring(0,1).toUpperCase().concat(r.substring(1).toLowerCase()));
+            }
+//===============================================================================//
+            //7
+            System.out.println("How many number do you want to enter?");
+            int i1=scan.nextInt();
+            int i2[]=new int[i1];
+            int max=0;
+            for(int i=0;i<=i2.length-1;i++){
+                System.out.println("Enter number");
+                i2[i]=scan.nextInt();
+                if(i2[i]>max){
+                    max=i2[i];
+                }
+            }
+            System.out.println(max);
+//==========================================================================//
+            //8
+            System.out.println("How many number do you want to enter?");
+            int i11=scan.nextInt();
+            int i22[]=new int[i11];
+            int min=Integer.MAX_VALUE;
+            for(int i=0;i<=i22.length-1;i++){
+                System.out.println("Enter number");
+                i22[i]=scan.nextInt();
+                if(min>i22[i]){
+                    min=i22[i];
+                }
+            }
+            System.out.println(min);
+//============================================================================//
+//9
+            int i10[]={1,2,3,4,5};
+            int maxx=Integer.MIN_VALUE;
+            for(int i=0;i<=i10.length-1;i++){
+                if(i10[i]>max){
+                    max=i10[i];
+                }
+            }
+            System.out.println(max);
+//===========================================================================//
+            //10
+            String[] months ={"Jan" , "Feb", "Mar", "Apr", "May",
+                    "Jun", "Jul", "Aug", "Sep", "Oct","Nov", "Dec"};// size: 12,  : 11
+            //          0       1      2
+        /*
+ String[] months2 = new String[12];
+ months2[0] = "Jan";
+  ...
+  */
+            Scanner input = new Scanner(System.in);
+            System.out.println("Enter a number");
+            int num11 = input.nextInt(); // 18
+            int attepmts = 1;
+            while(num11 > 12 || num11 <= 0){
+                System.out.println("Invalid Entry");
+                System.out.println("Please re-enter the number");
+                num11 = input.nextInt();  //12
+                attepmts++;
+                if(attepmts == 3 &&  (num11 > 12 || num11 <= 0) ){
+                    System.out.println("Invalid Entry, you already have 3 attepmts");
+                    System.exit(0);
+                }
+            }
+            String result =  months[num-1];  // index number, index number starts from 0 ALWAYS
+            System.out.println(result);
+//==============================================================================//
+            //11
+            int[] arr = {1,2,3};
+            String r = Arrays.toString(arr);
+            System.out.println(r);
+            //    System.out.println(arr); // ARray bMUST be converted to string
+            // before we print
+            String names[] = {"Madina", "Fatih", "Osman"};
+            System.out.println( Arrays.toString(  names  )  );
+            double[] nums = {10, 20, 30 , 40, 50};
+            System.out.println( Arrays.toString( nums )  );
+            System.out.println( nums[0] );
+//=============================================================================//
+            //12
+            int arr1[]={1,2,3};
+            int arr2[]={4,5,6,7};
+            int arr3[]=new int[arr1.length+arr2.length];
+            for(int i=0;i<=arr1.length-1;i++){
+                arr3[i]=arr1[i]; }
+            for(int a=0;a<=arr2.length-1;a++){
+                arr3[arr1.length+a]=arr2[a]; }
+            System.out.println(Arrays.toString(arr3));
+//============================================================================//
+            //13
+            int[] arr5 = {3, 2, 1};
+            int[] arr6 = {2, 1, 3};
+            Arrays.sort(arr5);  //[ 1,  2,  3]
+            Arrays.sort(arr6); // [ 1, 2, 3]
+            boolean result3 = Arrays.equals(arr5, arr6);  // true
+            System.out.println(result3);
+//============================================================================//
+            //14
+            char[] ch = {'Z', 'D', 'W', 'Y', 'A', 'B', 'E' , 'D' };
+            Arrays.sort(ch);
+            System.out.println(Arrays.toString(ch));
+//==============================================================================//
+            //15
+            String str1 = "Cybertek School";
+            String str2 = "School Cybertek";
+            char[] ch1 = str1.toCharArray(); //[C, y, b, e, r, t, e, k,
+            // , S, c, h, o, o, l]
+            char[] ch2 = str2.toCharArray(); //[S, c, h, o, o, l,  ,
+            // C, y, b, e, r, t, e, k]
+            Arrays.sort(ch1); // [ , C, S, b, c, e, e, h, k, l, o, o, r, t, y]
+            Arrays.sort(ch2); // [ , C, S, b, c, e, e, h, k, l, o, o, r, t, y]
+            boolean euqalStr = Arrays.equals(ch1, ch2);
+            System.out.println(euqalStr); // str1 & str2 are biuld out of same
+            // characters
+//==============================================================================//
+            //16
+            String[] names1 = {"Deniz", "Osman", "Rustem",  "Anna", "Ali", "Adil"};
+            Arrays.sort(names1);
+            System.out.println( Arrays.toString(names1) );
+//=============================================================================//
+            //17
+            int[] arr11 = {3,1,4,-1,100, -100, 200, 155};
+            int[] arrDesc = new int[arr.length];  //[0, 0, 0, 0, 0, 0, 0, 0]
+            // index:0, 1, 2, 3, 4, 5, 6, 7
+            Arrays.sort(arr11); // [-100, -1, 1, 3, 4, 100, 155, 200]
+            // index:   0    1  2  3  4  5     6    7
+            int k = 0;
+            for(int i = arr11.length-1; i >= 0; i-- ){
+                arrDesc[k] =  arr[i];
+                k++;
+            }
+
+            System.out.println(Arrays.toString(arr11));
+            System.out.println(  Arrays.toString(arrDesc)  );
+//=======================================================================//
+            // 18
+            String[] words = {input.nextLine(),input.nextLine(),
+                    input.nextLine(),input.nextLine(),input.nextLine()};
+
+            for(int i=0;i<words.length;i++){
+                System.out.println(words[i].substring(0,1)+
+                        words[i].substring(words[i].length()-1));
+            }
+//====================================================================//
+            //19
+            System.out.println("Enter names");
+            String[] arr111 = new String[5];
+            for (int i=0;i<5;i++)
+            {
+                arr111[i] = scan.nextLine();
+            }
+
+            for(int i=0;i<arr111.length;i++) {
+                System.out.println(arr111[i].substring(0, 3));
+
+            }
+//========================================================================//
+            //20
+            int nums55[]={1,2,3,5,5};
+            for(int i=0;i<nums55.length-1;i++){
+                if(nums55[i]==nums55[i+1]&&nums55[i]==5){
+                    System.out.println("true");
+                    System.exit(0);
+                }
+            }
+            System.out.println("false");
+//=====================================================================//
+            //21
+            String[] words33 = {input.nextLine(),input.nextLine(),
+                    input.nextLine(),input.nextLine(),input.nextLine()};
+
+            String ss[]=new String[words33.length];
+            for(int i=0;i<words33.length;i++){
+                ss[i]=words33[i].substring(0,1)+words33[i].substring(words33[i].length()-1);
+            }
+            System.out.println(Arrays.toString(ss));
+//=======================================================================//
+            //22
+            Scanner input11 = new Scanner(System.in);
+            int[] nums22 = {input11.nextInt(),input11.nextInt(),
+                    input11.nextInt(),input11.nextInt(),input11.nextInt()};
+            int count12=0;
+
+            for(int i=0;i<nums22.length;i++){
+                if(nums22[i]%2==0){
+                    count12++;
+                }
+            }
+            System.out.println(count12);
+//=========================================================================//
+            //23
+            String ss12="";
+            for(int i=0;i<nums.length;i++) {
+                int count122 = 0;
+                for (int j = 0; j < nums.length; j++) {
+
+                    if (nums[i] == nums[j]) {
+                        count122++;
+                    }
+                }
+                if (count122 != 2) {
+                    ss12 += nums[i];
+                }
+            }
+            System.out.println(ss12);
+//=====================================================================//
+            //24
+            String[] words55= new String[5];
+            for(int i = 0; i < 5;  i++) {
+                words55[i] = input.nextLine();
+            }
+            String largest=words55[0];
+            for(int i=0;i<words55.length;i++){
+                for(int j=0;j<words55.length;j++) {
+                    if (words[i].length() > words55[j].length()) {
+                        largest = words55[i];
+                    }
+                }}
+            System.out.println(largest);
+//=========================================================================//
+            //25
+            String[] namess = {"Reem", "Omer", "Muhtar", "Emrah", "Mohammed",
+                    "Ana", "AAAAABBBBBBBBCCCCCC"};
+            int maxLengthString = names[0].length(); //4
+            int minLengthString = names[0].length();
+            String logestword = "";
+            String shortestWord = "" ;
+            for(int i = 0; i < namess.length ; i++  ){
+                if(namess[i].length() > maxLengthString ){
+                    maxLengthString = namess[i].length();
+                    logestword = namess[i];
+                }
+                if(namess[i].length() < minLengthString){
+                    minLengthString = namess[i].length();
+                    shortestWord = namess[i];
+                }
+            }
+            System.out.println(logestword);
+            System.out.println(shortestWord);
+//========================================================================//
+            //26
+            double[] arr55 = {1, 2, 2};  //5, 10
+            // average: sum of all numbers / length
+            double length = arr55.length; // total number of the elements
+            double sum = 0;
+            for(int i = 0; i < length; i++  ){
+                //  double eachNum =  arr[i];
+                sum +=   arr55[i]; // eachNum;
+            }
+            System.out.println(sum);
+            double average = sum/length;
+            System.out.println(average);
+//==========================================================================//
+            //27
+            DecimalFormat DF = new DecimalFormat("0.00");
+            // rounding the decimals
+            double a = 10.0/3.0;
+            System.out.println(a);
+            System.out.println( DF.format(a)  );
+            System.out.println(2.3467899);
+            System.out.println( DF.format(2.346789));
+//=========================================================================//
+            //28
+            char [] array={'d','c','a','b'};
+            Arrays.sort(array);
+
+            for(char each:array){
+                System.out.print(each+"");
+                if(each=='b'){
+                    continue;
+
+                }
+            }
+//=========================================================================//
+            //29
+            String sentence = "Today is great day";
+            String[] words44 = sentence.split(" ");
+            System.out.println(Arrays.toString(words44));
+            // [Today, is, great,day]
+
+            String result33 = "";
+            for(int i = words44.length-1;  i >= 0; i-- ){
+                String eachWords =  words44[i];
+                // System.out.print(eachWords+" ");
+
+//======================================================================//
+            //34
+            String sentnce = "I like Java";   // Java like I
+            String[] words555 =  sentnce.split(" ");  // [I, like, Java]
+            for(String eachWord : words555 ){ // 0 ~ 2
+                System.out.println(eachWord);
+            }
+            for(int i = words55.length-1; i >= 0; i--){
+                System.out.println(words55[i]);
+            }
+            //======================================================================//
+            //35
+            String[] emails22 = {"cybertek@gmail.com", "cybertek@yahoo.com",
+                    "cybertek@hotmail.com", "cybertek@outlook.com"}; // 10
+            for(String EachEmail : emails22) {  // 10
+                if (EachEmail.endsWith("@gmail.com")) {
+                    continue;
+                }
+                System.out.println(EachEmail);
+
+        /*
+  if (!EachEmail.endsWith("@gmail.com")) {
+     System.out.println(EachEmail);
+        }
+        */
+
+//======================================================================//
+//36
+                //                      0        1         2         3
+                String[] DevTeam = {"Zeynep", "Haider", "Jovid", "Muhtar"};
+                String[] TestersTeam = {"Rahman", "Aishan", "Osman", "Ali"};
+                String[] PO = {"Barzy", "Donald"};
+                String[] TestersTeam2 = {"Ilham", "Zarina", "Aizhan", "Asiman"};
+
+                String[][] ScrumTeam = {DevTeam, TestersTeam, PO};
+                //              0,        1      ,  2
+                ScrumTeam[0][3] = "Jean";
+                ScrumTeam[1] = TestersTeam2;
+                System.out.println(ScrumTeam[0][3]);
+                String info = ScrumTeam[1][2];
+                System.out.println(info);
+
+                System.out.println("=====================================");
+
+                for (String eachEmployee : ScrumTeam[1]) {
+                    System.out.println(eachEmployee);
+                }
+                System.out.println("=====================================");
+                System.out.println(ScrumTeam[2][1]);
+//======================================================================//
+                //37
+                int[] arr00 = {1, 2, 3};
+                //                           0  1  2       0  1  2  3
+                int[][] arr2D = {{1, 2, 3}, {4, 5, 6, 7}};
+                //            0      ,       1
+                System.out.println(arr2D.length);
+                int[] arr1D = arr2D[1];     // {1, 2, 3};
+                System.out.println(Arrays.toString(arr2D[1]));
+                System.out.println(Arrays.toString(arr1D));
+                int num1 = arr2D[1][3];
+                System.out.println(num1);
+                System.out.println(arr2D[1][3]);
+//======================================================================//
+                //38
+                char[][] ch2D = {{'A', 'B'}, {'D', 'E', 'F'}, {'G', 'H', 'I'}};
+                // index:               0                  1                 2
+                char c1 = ch2D[1][0];
+                System.out.println(c1);
+                char[] ch211 = ch2D[2];    //{G, H, I};
+                System.out.println(Arrays.toString(ch211));
+//===================================================================//
+                //39
+                String[][] str2D = {{"A", "B", "C"}, {"D", "E", "F"}, {"J", "H", "I"}};
+                //                    0                    1               2
+                String r1 = str2D[2][1];
+                System.out.println(r1);
+                System.out.println(str2D[2][1]);
+//========================================================================//
+                //40
+                int[] arr13D = {1, 2, 3};
+                System.out.println(Arrays.toString(arr13D));
+                int[][] arr23D = {{1, 2, 3}, {4, 5, 6}};
+                //   System.out.println(  Arrays.toString(arr2D));
+                System.out.println(Arrays.deepToString(arr23D));
+//======================================================================//
+                //41
+
+                //                         0       1               0        1
+                int[][][] arr3D = {{{1, 2, 3}, {4, 5, 6}}, {{7, 8, 9}, {10, 11, 12}}};
+
+                //                             0                          1
+                System.out.println(Arrays.deepToString(arr3D[1]));
+                System.out.println(Arrays.toString(arr3D[0][1]));
+                System.out.println(arr3D[1][1][2]);
+//===========================================================================//
+                //42
+
+                String[] wildAnimals = {"Tiger", "Lion", "Monkey", "Turtle", "Corcodile"};
+                String[] birds = {"Eagle", "Ducks", "Peacock", "Chicken"};
+                //   0        1          2         3
+                String[][] zoo = {wildAnimals, birds};
+
+                //             0          1
+                String kfc = zoo[1][3];  // "Chicken"
+                System.out.println(kfc);
+                System.out.println("=======================================================");
+                for (String eachBirds : zoo[1]) {   // 4 times
+                    if (eachBirds.equals("Chicken")) {
+                        continue;
+                    }
+                    System.out.println(eachBirds);
+                }
+                System.out.println("=======================================================");
+                for (String each : zoo[0]) {  // 5
+                    if (each.equals("Turtle")) {
+                        continue;
+                    }
+                    System.out.println(each);
+                }
+//===============================================================================================//
+                //43
+                int[] numbers = new int[100];
+                for (int i = 0; i < numbers.length; i++) {
+                    numbers[i] = i + 1;
+                }
+                System.out.println(Arrays.toString(numbers));
+//--------------------------------------------------------------------------------------------//
+                for (int each : numbers) {
+                    if (each % 2 != 0) {
+                        continue;
+                    }
+                    System.out.print(each + " ");
+                }
+//==============================================================================================//
+                //44
+                System.out.println("how many number do you wan to add?");
+                int i3 = scan.nextInt();
+                int arr88[] = new int[i3];
+                for (int i58 = 0; i58 < i3; i58++) {
+                    System.out.println("add number");
+                    arr88[i58] = scan.nextInt();
+
+                }
+                for (int i = arr88.length - 1; i >= 0; i--) {
+                    int eachNum = arr88[i];
+                    System.out.print(eachNum + " ");
+
+                }
+                System.out.println();
+
+                int[] arr10 = new int[arr88.length]; // loop donerken arr1[i] olur ve i++ olduguna gore arr1
+                // icin doldurur arr[j] ona goredi ki j-- azalir ve
+                int j = arr88.length - 1;            // arr azalir ve arr1 e yazilir
+                for (int i = 0; i < arr88.length; i++) {
+                    arr10[i] = arr88[j];
+                    j--;
+                }
+                System.out.println(Arrays.toString(arr10));
+
+
+//=============================================================================================//
+//45
+                String sentence55 = "I Like Java and javascript".toLowerCase();
+                String words5555[] = sentence55.split(" ");
+                int countjava = 0;
+                int python = 0;
+                for (String each : words5555) {
+                    if (each.contains("java")) {
+                        countjava++;
+                    }
+                    if (each.contains("python")) {
+                        python++;
+                    }
+                }
+                System.out.println(countjava);
+                System.out.println(python);
+//==========================================================================================//
+                //46
+                int[] arr666 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+                int oddNumber = 0;
+                int evenNumber = 0;
+                String odd = "";
+                String even = "";
+
+                for (int each : arr666) {
+                    if (each % 2 != 0) {
+                        oddNumber++;
+                        odd += each;
+                    }
+                    if (each % 2 != 0) {
+                        continue;
+                    }
+                    evenNumber++;
+                    even += each;
+                }
+                System.out.println(odd);
+                System.out.println(oddNumber);
+                System.out.println(evenNumber);
+                System.out.println(even);
+//===========================================================================================//
+                //47
+                int[][] arr2d = {{1, 2, 3}, {4, 5, 6}};
+                int[] arr1d = arr2d[0];
+                System.out.println(Arrays.toString(arr1d));
+                System.out.println(Arrays.toString(arr2d[0]));
+                ;
+                System.out.println(arr2d[0][2]);
+                System.out.println(Arrays.deepToString(arr2d));
+                System.out.println(Arrays.toString(arr2d[1]));
+                for (int eachElement : arr2d[0]) {
+                    System.out.println(eachElement);
+                }
+                for (int i = 0; i < arr2d[1].length; i++) {
+                    int num77 = arr2d[1][i];
+                    System.out.println(num77);
+                }
+///==========================================================================================//
+                //48
+                char[][] arr22D = {{'A', 'B'}, {'C', 'D', 'E'}, {'F', 'J', 'H', 'I'}};
+
+                for (int i = 0; i < arr22D[0].length; i++) {
+                    System.out.println(arr22D[0][i]);
+                }
+
+                for (int i = 0; i < arr22D[1].length; i++) {
+                    System.out.println(arr22D[1][i]);
+                }
+
+                for (int i = 0; i < arr22D[2].length; i++) {
+                    System.out.println(arr22D[2][i]);
+                }
+                System.out.println("=============================================");
+                for (int j11 = 0; j11 < arr22D.length; j11++) {
+                    for (int i = 0; i < arr22D[j11].length; i++) {
+                        System.out.println(arr22D[j11][i]);
+                    }
+                }
+//=========================================================================================//
+                //49
+                int[][] numbers00 = {{9, 8, 7}, {6}, {5, 4, 3, 2, 1, 0}};
+                for (int k0 = 0; k0 < numbers00.length; k0++) {
+                    for (int i = 0; i < numbers00[k0].length; i++) {
+                        System.out.print(numbers00[k0][i] + " ");
+                    }
+                    System.out.println();
+                }
+//============================================================================================//
+                //50
+                int[][] numbers11 = {{9, 8, 7}, {6}, {5, 4, 3, 2, 1, 0}};
+                for (int k11 = 0; k11 < numbers11.length; k11++) { //k: index num of 1D arrays
+                    for (int i111 = numbers11[k11].length - 1; i111 >= 0; i111--) { // i: index num of elements in 1D array
+                        System.out.print(numbers11[k11][i111] + " ");
+                    }
+                }
+                System.out.println();
+//========================================================================================//
+                //51
+                int[][] numbers33 = {{9, 8, 7}, {6}, {5, 4, 3, 2, 1, 0}};
+                for (int k22 = numbers33.length - 1; k22 >= 0; k22--) { //k: index num of 1D arrays (reversed)
+                    for (int i = 0; i < numbers33[k22].length; i++) { // i: index num of elements in 1D array
+                        System.out.print(numbers33[k22][i] + " ");
+                    }
+                }
+//================================================================================================//
+                //52
+                int[][] numbers44 = {{9, 8, 7}, {6}, {5, 4, 3, 2, 1, 0}};
+                for (int k44 = numbers44.length - 1; k44 >= 0; k44--) { //k: index num of 1D arrays (reversed)
+                    for (int i = numbers44[k].length - 1; i >= 0; i--) { // i: index num of elements in 1D array (reversed)
+                        System.out.print(numbers44[k44][i] + " ");
+                    }
+                }
+//================================================================================================//
+                //53
+
+                int[][] numbers66 = {
+                        {1, 2, 3},
+                        {4, 5, 6, 7, 8, 9},
+                        {10, 11, 12, 13, 14},
+                        {15, 16, 17, 18, 19, 20, 21}
+                };
+                int countOdd = 0;
+                for (int j66 = 0; j66 < numbers.length; j66++) {
+                    for (int i = 0; i < numbers66[j66].length; i++) {
+                        int num66 = numbers66[j66][i];
+                        if (num66 % 2 == 0) {
+                            System.out.print(num66 + " ");
+                        } else {
+                            countOdd++;
+                        }
+                    }
+                }
+                System.out.println();
+                System.out.println(countOdd);
+//===========================================================================================//
+                //54
+                int[] arr66 = {1, 2, 3, 4, 5};
+                //   0 1 2 3 4
+                for (int each : arr66) {
+                    System.out.println(each);
+                }
+//=============================================================================================//
+                //55
+                int[][] arr2DD = {{1, 2, 3}, {4, 5, 6}};
+                //                   0        1
+                for (int[] each1Darray : arr2DD) {
+                    for (int eachElement : each1Darray) {
+                        System.out.println(eachElement);
+                    }
+                }
+//=================================================================================================//
+                //56
+                char[][] ch2DD = {{'A', 'B'}, {'C', 'D', 'E'}, {'F', 'J', 'H'}};
+                //                      0            1
+                for (char[] each1DArray : ch2DD) {  //2
+                    for (char eachElement : each1DArray) {
+                        System.out.println(eachElement);
+                    }
+                }
+//================================================================================================//
+                //57
+                int[][] numbers99 = {
+                        {1, 2, 3},
+                        {4, 5, 6, 7, 8, 9},
+                        {10, 11, 12, 13, 14},
+                        {15, 16, 17, 18, 19, 20, 21}
+                };
+                int countOdd99 = 0;
+                int sumofOdd99 = 0;
+                int sumofEven99 = 0;
+                for (int[] each1DArray : numbers99) {
+                    for (int eachElement : each1DArray) {
+                        if (eachElement % 2 == 0) { // even nums
+                            System.out.print(eachElement + " ");
+                            sumofEven99 += eachElement;
+                        } else {  // odd numbers
+                            sumofOdd99 += eachElement;
+                            countOdd99++;
+                        }
+                    }
+                }
+                System.out.println();
+                System.out.println(countOdd99);
+                System.out.println("sum of odd: " + sumofOdd99);
+                System.out.println("sum of even: " + sumofEven99);
+            }
+        }
+
+
+
+
